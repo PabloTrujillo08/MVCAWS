@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>AWS S3 Service Storage</h1>
+<img src="~/images/awslogo.png" style="width: 150px; height: 120px;" />
+<br /><br />
+<ul class="list-group">
+    <li class="list-group-item">
+        <a asp-action="FilesListAWS"
+           asp-controller="AWSFiles">
+            <i class="fas fa-list"></i>
+            List Files AWS
+            
+        </a>
+    </li>
+    <li class="list-group-item">
+        <a asp-action="UploadFileAWS"
+           asp-controller="AWSFiles">
+            <i class="fas fa-download"></i>
+            Upload File AWS
+        </a>
+    </li>
+</ul>

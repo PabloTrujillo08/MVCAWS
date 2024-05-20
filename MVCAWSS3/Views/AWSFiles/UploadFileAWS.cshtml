@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "UploadFileAWS";
+}
+
+<a asp-action="Index"
+   asp-controller="Home">
+    Volver a Index
+</a>
+
+<h1>Upload File AWS</h1>
+
+<form method="post" enctype="multipart/form-data">
+    <label>Seleccione un archivo: </label>
+    <input type="file" name="file" class="form-control-file" /><br />
+    <button type="submit" class="btn btn-success">
+        Subir archivo
+    </button>
+</form>
+<h1 style="color:blue">
+    @ViewData["MENSAJE"]
+</h1>
